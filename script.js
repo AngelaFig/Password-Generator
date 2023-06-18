@@ -1,4 +1,5 @@
 // Assignment Code
+// Add the rest of the possibilities
 let upperCaseCharacters = ["A", "B", "C", "D", "E"]
 let lowerCaseCharacters = ["a","b", "c", "d", "e"]
 let specialCharacters = ["!", "@", "#", "$","%"]
@@ -6,11 +7,11 @@ let numbers = ["0","1","2","3","4","5","6","7","8","9"]
 var generateBtn = document.querySelector("#generate");
 
 // testing
-console.log(generateBtn);
+// console.log(generateBtn);
 // note to self console error-generate password not defined
 function generatePassword() {
   let passwordLength = prompt("Enter the Length of Password");
-  if(passwordLength < 8 && passwordLength >= 128) {
+  if(passwordLength < 8 || passwordLength >= 128) {
     alert("Please Enter Password Between 8-128 Characters");
     generatePassword()
   }
