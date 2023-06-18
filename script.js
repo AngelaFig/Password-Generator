@@ -33,6 +33,10 @@ function generatePassword() {
   if(confirmNumber === true) {
     finalArray = finalArray.append(numbers)
   }
+  if(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumber === false) {
+    alert("Choose at least ONE of the presented criteria");
+    generatePassword()
+  }
 
   let randomPassword = ""
   for(i = 0; i < passwordLength; i++) {
