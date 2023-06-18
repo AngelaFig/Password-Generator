@@ -1,8 +1,8 @@
 // Assignment Code
 // Add the rest of the possibilities
-let upperCaseCharacters = ["A", "B", "C", "D", "E"]
-let lowerCaseCharacters = ["a","b", "c", "d", "e"]
-let specialCharacters = ["!", "@", "#", "$","%"]
+let upperCaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+let lowerCaseCharacters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+let specialCharacters = ["!", "@", "#", "$","%","^","&","*","(",")","-","_","=","+","~"]
 let numbers = ["0","1","2","3","4","5","6","7","8","9"]
 var generateBtn = document.querySelector("#generate");
 
