@@ -56,9 +56,9 @@ function writePassword() {
   passwordText.value = password;
 
 }
-// seems that generatePassword() line 10 not defined
 
 // Add event listener to generate button
+// must include the write password function after click
 generateBtn.addEventListener("click", writePassword);
 
 // not sure how to test the event listener, would I have to creat fucntion next to click?
