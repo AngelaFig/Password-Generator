@@ -6,11 +6,9 @@ In this project, I received starter code which I  modified in order to create a 
 One may notice that my JavaScript has a few comments that have been left in the code. This challenge certainly taught me the importance of pseudo-coding.  
 
 
-## Usage
+## Deployed Application Link
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+https://angelafig.github.io/Password-Generator/
 
 ![screenshot of random password generator application](img/03-javascript-homework-demo.png)
 
