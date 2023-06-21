@@ -20,6 +20,7 @@ function generatePassword() {
   let confirmSpecialCharacter = confirm("Do you want Special Characters? ");
   let confirmNumber = confirm("Do you want Numbers? ");
   // if all confirm false then alert to choose at least one confirm & call generatePassword()
+  
   let finalArray = []
   if(confirmUpperCase === true) {
     finalArray = finalArray.concat(upperCaseCharacters)
@@ -40,7 +41,7 @@ function generatePassword() {
 
   let randomPassword = ""
   for(i = 0; i < passwordLength; i++) {
-    let randomIndex = Math.floor(Math.random() * passwordLength) 
+    let randomIndex = Math.floor(Math.random() * finalArray.length) 
     let randomCharacter = finalArray[randomIndex]
     randomPassword = randomPassword + randomCharacter
   }
@@ -58,10 +59,8 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-// must include the write password function after click
 generateBtn.addEventListener("click", writePassword);
 
-// not sure how to test the event listener, would I have to creat fucntion next to click?
 // When click, must receive prompts for password criteria
 // user then selects password criteria they want to use
 // must choose length btw 8 and 128 characters
