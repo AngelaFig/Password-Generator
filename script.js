@@ -22,16 +22,16 @@ function generatePassword() {
   // if all confirm false then alert to choose at least one confirm & call generatePassword()
   let finalArray = []
   if(confirmUpperCase === true) {
-    finalArray = finalArray.append(upperCaseCharacters)
+    finalArray = finalArray.concat(upperCaseCharacters)
   }
   if(confirmLowerCase === true) {
-    finalArray = finalArray.append(lowerCaseCharacters)
+    finalArray = finalArray.concat(lowerCaseCharacters)
   }
   if(confirmSpecialCharacter === true) {
-    finalArray = finalArray.append(specialCharacters)
+    finalArray = finalArray.concat(specialCharacters)
   }
   if(confirmNumber === true) {
-    finalArray = finalArray.append(numbers)
+    finalArray = finalArray.concat(numbers)
   }
   if(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumber === false) {
     alert("Choose at least ONE of the presented criteria");
