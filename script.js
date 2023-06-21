@@ -23,7 +23,7 @@ function generatePassword() {
   let finalArray = []
   if(confirmUpperCase === true) {
     finalArray = finalArray.concat(upperCaseCharacters)
-  }
+  } 
   if(confirmLowerCase === true) {
     finalArray = finalArray.concat(lowerCaseCharacters)
   }
